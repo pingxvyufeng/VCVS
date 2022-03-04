@@ -20,3 +20,16 @@ conda activate VSVS
 pip install -r requirements.txt
 ```
 ## DataSet
+For the convenience of Chinese researchers, we upload the dataset to Baidu Netdisk：
+```
+Address：https://pan.baidu.com/s/1PRAn3-3QE1kzD6YHnA2Zcg 
+Extraction code：uzcp 
+```
+Please put the downloaded data folder in the root directory of the code.
+## Evaluation
+To evaluate all splits in ./splits with corresponding trained models in ./src/models run the following:
+```
+python train.py -params parameters.json
+```
+## Acknowledgement
+We would like to thank to JA Ghauri et al. and JA Ghauri et al. for making the preprocessed datasets publicly available.
