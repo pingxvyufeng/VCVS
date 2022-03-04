@@ -1,7 +1,7 @@
 # VCVS
 ![imagine](https://github.com/pingxvyufeng/VCVS/blob/main/VCVS.png)  
 This repo contains the Pytorch implementation of the nidc2021 paper - Video Summarization based on Fusing Features and Shot Segmentation  
-We refer to the code of `<{Supervised Video Summarization Via Multiple Feature Sets with Parallel Attention}>`，proposed a shot feature extraction algorithm based on netVLAD and multiple features of the video are adaptively fused using capsule network.  
+We refer to the code of `{Supervised Video Summarization Via Multiple Feature Sets with Parallel Attention}`，proposed a shot feature extraction algorithm based on netVLAD and multiple features of the video are adaptively fused using capsule network.  
 ## Installation  
 The development and evaluation was done on the following configuration:  
 ### System configuration
