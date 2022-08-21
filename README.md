@@ -28,6 +28,10 @@ Please put the downloaded data folder in the root directory of the code.
 ## train
 You can execute the following commands to complete the training and testing of the model:
 ```
+python main.py--train
+```
+The training and testing results will be saved to
+```
 /data/results.txt
 ```
 ## Acknowledgement
