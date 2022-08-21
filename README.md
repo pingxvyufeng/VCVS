@@ -1,6 +1,5 @@
 # VCVS
-This repo contains the Pytorch implementation of the nidc2021 paper - Video Summarization based on Fusing Features and Shot Segmentation  
-We refer to the code of `{Supervised Video Summarization Via Multiple Feature Sets with Parallel Attention}`，proposed a shot feature extraction algorithm based on netVLAD and multiple features of the video are adaptively fused using capsule network.  
+This repo contains the Pytorch implementation of the Video summary model. This project adds a capsule network to the encoder-decoder model with self-attention mechanism to achieve adaptive fusion of video multimodal features. The details of the model can refer to the following figure.
 ## Installation  
 The development and evaluation was done on the following configuration:  
 ### System configuration
@@ -19,16 +18,17 @@ conda activate VSVS
 pip install -r requirements.txt
 ```
 ## DataSet
-For the convenience of Chinese researchers, we upload the dataset to Baidu Netdisk：
+This model uses the TVSum and SumMe datasets commonly used in the field of video summarization for training and testing. We refer to the work of JA Ghauri et al. to extract the RGB features and Light Flow features of the video. We directly modified the H5 file of the dataset published by ZHOU et al., adding two key values, RGB_features and Light flow_features, and the model can be called directly after importing the data.At the same time, we also provide a video summary dataset we collected from the bilibili video website. This dataset is not fully opened at present, only the H5 file of the dataset is provided. For the convenience of Chinese researchers, we upload the dataset to Baidu Netdisk：
 ```
-Address：https://pan.baidu.com/s/1PRAn3-3QE1kzD6YHnA2Zcg 
-Extraction code：uzcp 
+Address：https://pan.baidu.com/s/127tpXUrUeVpEutcokRXuoA
+Extraction code：p9du 
 ```
 Please put the downloaded data folder in the root directory of the code.
-## Evaluation
-To evaluate all splits in ./splits with corresponding trained models in ./src/models run the following:
+## train
+You can execute the following commands to complete the training and testing of the model:
 ```
-python train.py -params parameters.json
+python main.py --train
 ```
+You can find the training and testing results in /data/results.txt
 ## Acknowledgement
-We would like to thank to JA Ghauri et al. and JA Ghauri et al. for making the preprocessed datasets publicly available.
+We would like to thank to JA Ghauri et al.  for making the preprocessed datasets publicly available.
