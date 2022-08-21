@@ -10,10 +10,10 @@ The development and evaluation was done on the following configuration:
 * CUDNN: 7.1.2
 ### Python packages
 The main requirements are python (v3.6) and pytorch (v1.6.0). Some dependencies may need to be downloaded by the user. You can run the following commands to create the necessary environment.
-'''
+```
 git clone git@github.com/pingxvyufeng/VCVS.git`  
 cd VCVS 
 conda create -n VCVS python=3.6 
 conda activate VSVS  
 pip install -r requirements.txt
-'''
+```
