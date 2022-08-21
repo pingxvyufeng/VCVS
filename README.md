@@ -1,5 +1,6 @@
 # VCVS
 This repo contains the Pytorch implementation of the Video summary model. This project adds a capsule network to the encoder-decoder model with self-attention mechanism to achieve adaptive fusion of video multimodal features. The details of the model can refer to the following figure.
+![image](https://github.com/pingxvyufeng/VCVS/blob/main/FIG.png)
 ## Installation
 The development and evaluation was done on the following configuration:
 ### System configuration
