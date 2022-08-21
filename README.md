@@ -18,6 +18,9 @@ You can execute the following commands to complete the training and testing of t
 ```
 python main.py --train
 ```
-You can find the training and testing results in /data/results.txt
+You can find the training and testing results in
+```
+/data/results.txt
+```
 ## Acknowledgement
 We would like to thank to JA Ghauri et al.  for making the preprocessed datasets publicly available.
